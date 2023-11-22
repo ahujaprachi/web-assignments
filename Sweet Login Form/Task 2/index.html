@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sweet Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <form onsubmit="return false;">
+        <div class="welcome">Welcome</div>
+
+        <div class="logo">
+          <i class="bx bxs-parking"></i>
+        </div>
+
+        <div class="txt_field">
+          <input
+            type="text"
+            placeholder="Email"
+            id="email"
+            onfocus="emailFocus()"
+          />
+
+          <i
+            class="bx bxs-error-circle validate-icon-email"
+            style="display: none"
+            onclick="showErrMsg('Email cannot be empty')"
+          ></i>
+        </div>
+        <div class="txt_field">
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            onfocus="passwordFocus()"
+          />
+          <i
+            class="bx bxs-error-circle validate-icon-pwd"
+            style="display: none"
+            onclick="showErrMsg('Password cannot be empty')"
+          ></i>
+
+          <i class="bx bx-show eye-btn" id="show" onclick="visible()"></i>
+        </div>
+        <p class="err-msg"></p>
+
+        <button class="submit-btn" onclick="onSubmit()">LOGIN</button>
+        <div class="signup_link">
+          Don't have an accounts ? <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

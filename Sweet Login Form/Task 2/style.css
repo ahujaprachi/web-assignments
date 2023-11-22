@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+.center {
+  width: 400px;
+  border-radius: 25%;
+  margin: auto;
+  margin-top: 40px;
+}
+.welcome {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.logo i {
+  margin-top: 20px;
+  font-size: 30px;
+  background-color: black;
+  color: #fff;
+  border-radius: 7px;
+  padding: 5px;
+}
+.center form {
+  position: relative;
+  text-align: center;
+  padding: 30% 15% 10%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+}
+
+form .txt_field {
+  /* position: relative; */
+  margin-bottom: 20px;
+}
+.txt_field input {
+  border: none;
+  border-bottom: 2px solid skyblue;
+  width: 100%;
+  padding: 20px 5px;
+
+  font-size: 16px;
+  outline: none;
+}
+.txt_field .eye-btn {
+  position: absolute;
+  top: 55%;
+  right: 20%;
+  cursor: pointer;
+  font-size: 20px;
+}
+.bxs-error-circle.validate-icon-pwd {
+  position: absolute;
+  top: 54%;
+  right: 20%;
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+}
+.bxs-error-circle.validate-icon-email {
+  position: absolute;
+  top: 42%;
+  right: 20%;
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+}
+
+.err-msg {
+  color: red;
+  text-align: left;
+  font-size: 13px;
+}
+
+.txt_field span::before {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 50%;
+  height: 1px;
+  background: #fff;
+}
+.submit-btn {
+  width: 90%;
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(183, 33, 255, 1) 0%,
+    rgba(33, 212, 253, 1) 100%
+  );
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+input[type="submit"]:hover {
+  border-color: #fff;
+}
+.signup_link {
+  margin-top: 100px;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  text-align: center;
+}
+.signup_link a {
+  color: black;
+
+  text-decoration: none;
+}

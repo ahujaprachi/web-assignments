@@ -3,62 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>Sweet Login Form</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            font-family:montserrat;
-            background:#f2f2f2;
-            height: 100vh;
-            overflow: hidden;
-        }
-    .center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 400px;
-        background: 10px;
-    }
-    .center h1{
-        text-align: center;
-        padding: 0 0 20px 0;
-        border-bottom: 1px solid silver;
-
-    }
-    .center form{
-    
-        padding: 20px 50px;
-        background-color:#fff;
-        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-
-
-    }
-    
-    
-    
-
-    
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <script src="index.js"></script>
     <div class="center">
-      <h1>Welcome</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="Username" required placeholder="Username"/>
-          <span></span>
-          <label>Username</label>
+      <form>
+        <div class="welcome">Welcome</div>
+        <div class="logo">
+          <i class="bx bxs-parking"></i>
         </div>
         <div class="txt_field">
-          <input type="password" required placeholder="Password" />
-          <span></span>
-          <label>Password</label>
+          <input type="text" required placeholder="Email" />
         </div>
-        <div class="pass">Forget Password?</div>
-        <input type="Submit" value="Login" /><b>
-        <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+        <div class="txt_field">
+          <i class="bx bx-show" id="show"></i>
+          <i class="bx bx-hide" id="hide"></i>
+          <input
+            type="password"
+            required
+            placeholder="Password"
+            id="password"
+          />
+        </div>
+        <input type="Submit" value="LOGIN" />
+        <div class="signup_link">
+          Don't have an accounts ? <a href="#">Signup</a>
+        </div>
       </form>
     </div>
   </body>
