@@ -4,13 +4,14 @@ let password = document.getElementById("password");
 function visible() {
   if (password.type == "password") {
     password.type = "text";
-    show.classList.remove("bx-show");
 
-    show.classList.add("bx-hide");
+    show.classList.add("bx-show");
+
+    show.classList.remove("bx-hide");
   } else {
     password.type = "password";
-    show.classList.remove("bx-hide");
-    show.classList.add("bx-show");
+    show.classList.remove("bx-show");
+    show.classList.add("bx-hide");
   }
 }
 function onSubmit() {

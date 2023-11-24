@@ -48,7 +48,7 @@ body {
 }
 
 form .txt_field {
-  /* position: relative; */
+  position: relative;
   margin-bottom: 20px;
 }
 .txt_field input {
@@ -62,25 +62,25 @@ form .txt_field {
 }
 .txt_field .eye-btn {
   position: absolute;
-  top: 55%;
-  right: 20%;
+  top: 48%;
+  right: 9%;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
 }
 .bxs-error-circle.validate-icon-pwd {
   position: absolute;
-  top: 54%;
-  right: 20%;
+  top: 48%;
+  right: 9%;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
   color: red;
 }
 .bxs-error-circle.validate-icon-email {
   position: absolute;
   top: 42%;
-  right: 20%;
+  right: 9%;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
   color: red;
 }
 
