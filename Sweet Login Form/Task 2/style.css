@@ -9,9 +9,19 @@ body {
   overflow: hidden;
 }
 
+/* Global style */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .display-none {
   display: none;
 }
+
+/* Main style */
 
 .center {
   max-width: 400px;
@@ -62,23 +72,27 @@ form .txt_field {
 }
 .txt_field .eye-btn {
   position: absolute;
-  top: 48%;
-  right: 9%;
+  top: calc(100% / 2 - 11px);
+  height: 22px;
+
+  right: 0;
   cursor: pointer;
   font-size: 22px;
 }
 .bxs-error-circle.validate-icon-pwd {
   position: absolute;
-  top: 48%;
-  right: 9%;
+  top: calc(100% / 2 - 11px);
+  height: 22px;
+  right: 0;
   cursor: pointer;
   font-size: 22px;
   color: red;
 }
 .bxs-error-circle.validate-icon-email {
   position: absolute;
-  top: 42%;
-  right: 9%;
+  top: calc(100% / 2 - 11px);
+  height: 22px;
+  right: 0;
   cursor: pointer;
   font-size: 22px;
   color: red;
